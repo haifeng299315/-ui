@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Staff Portal</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, Helvetica, sans-serif}
+body{background:#f7f8fc;padding-top:60px}
+.header{
+    position:fixed;top:0;left:0;right:0;
+    background:linear-gradient(90deg,#4e54c8,#8f94fb);
+    color:#fff;padding:16px 0;z-index:100;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+.container{width:100%;max-width:1000px;margin:auto;padding:0 20px}
+.nav{display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:18px;font-weight:bold}
+.menu a{color:#fff;margin-left:22px;text-decoration:none;font-size:14px}
+.menu a:hover{color:#ffdf40}
+.page-title{margin:30px 0 20px;font-size:20px;color:#2c3e50}
+.panel{
+    background:#fff;padding:24px;border-radius:12px;
+    box-shadow:0 3px 12px rgba(0,0,0,0.06);
+}
+table{width:100%;border-collapse:collapse}
+th{
+    background:linear-gradient(90deg,#4e54c8,#8f94fb);
+    color:#fff;padding:12px;text-align:left;
+}
+td{padding:12px;border-bottom:1px solid #eee}
+tr:hover{background:#f0f4ff}
+.in{color:#27ae60}
+.out{color:#e74c3c}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="container nav">
+    <div class="logo">Staff Portal</div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="admin.html">Manage</a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2 class="page-title">Furniture Management</h2>
+  <div class="panel">
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Stock</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Oak Dining Chair</td>
+        <td>Classic solid oak chair</td>
+        <td>450.00</td>
+        <td class="in">120</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Large Dining Table</td>
+        <td>6-seater dining table</td>
+        <td>2500.00</td>
+        <td class="in">38</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>3-Seater Sofa</td>
+        <td>Comfortable fabric sofa</td>
+        <td>3800.00</td>
+        <td class="out">0</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Wooden Wardrobe</td>
+        <td>Double door wardrobe</td>
+        <td>1800.00</td>
+        <td class="in">25</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Industrial Bookshelf</td>
+        <td>Steel frame bookshelf</td>
+        <td>1200.00</td>
+        <td class="in">42</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Queen Bed Frame</td>
+        <td>Sturdy bed frame</td>
+        <td>2200.00</td>
+        <td class="in">19</td>
+      </tr>
+    </table>
+  </div>
+</div>
+</body>
+</html>
